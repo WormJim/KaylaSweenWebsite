@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
+import CasesPerPop from '../components/data/countyCasesPerPop'
 import CovidMsDayToDay from '../components/data/covidMsDayToDay'
 import CovidMsMovingAvg from '../components/data/covidMsMovingAvg'
 import CovidMsPercentPositive from '../components/data/covidMsPercentPositive'
@@ -14,6 +15,7 @@ const covid19 = (props) => {
       <Helmet>
         <title>COVID-19 Data | Kayla Sween</title>
       </Helmet>
+      <CasesPerPop />
       <h1>COVID-19 Data for Mississippi</h1>
       <h2 className="pad-top">New Cases of COVID-19 Per Day (Moving Average)</h2>
       <CovidMsMovingAvg data={movingAvg} />
